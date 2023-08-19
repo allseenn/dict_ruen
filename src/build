@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+DICTS=ru_en-smirniczkij
+
+for dict in $DICTS; do
+	dictfmt --break-headwords --headword-separator ',' -s $DICTS --utf8 -c5 $dict < $dict
+	dictzip $dict.dict
+done

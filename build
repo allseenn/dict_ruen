@@ -1,8 +1,0 @@
-#!/bin/bash -e
-
-DICTS=smirniczkij-base
-
-for dict in $DICTS; do
-	dictfmt --break-headwords --headword-separator ',' --utf8 -c5 $dict <src/$dict
-	dictzip $dict.dict
-done
