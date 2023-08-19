@@ -45,4 +45,39 @@ dict -D
 dict Привет
 ```
 ## Installing from tarball
-Copy
+1. Change user to root
+```
+sudo su
+```
+2. Go to DICTD server folder
+```
+cd /usr/share/dictd
+```
+3. Download tarball with dictionary files from repo to local
+```
+wget https://github.com/allseenn/dict_ruen/raw/master/ru_en-smirniczkij.tar.gzip
+```
+4. Extract tarball
+```
+tar -xf ru_en-smirniczkij.tar.gzip
+```
+5. Delete tarball
+```
+rm ru_en-smirniczkij.tar.gzip
+```
+6. Add new dictionary to DICTD config
+```
+ dictdconfig -w
+```
+7. Restart DICTD service
+```
+systemctl restart dictd
+```
+8. Check that **ru_en-smirniczkij** is present in dictionary list
+```
+dict -D
+```
+9. If all installed properly you could use command line or GUI dict client
+```
+dict Привет
+```
