@@ -1,8 +1,10 @@
 # Russian-English dictionary (DICT format)
 ## Description
+
 Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git) of Russian-English dictionary by Smirniczkij in DICT format (.index, .dict.dz) used by DICTD server (/usr/share/dictd). Tested on Ubuntu 20.04 LTS.
 
 ## Installation from source 
+
 1. Install git and dict format utility
 ```
 apt install git dictfmt
@@ -43,7 +45,9 @@ dict -D
 ```
 dict Привет
 ```
+
 ## Installing from tarball
+
 1. Change user to root
 ```
 sudo su
