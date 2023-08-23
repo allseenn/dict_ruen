@@ -6,6 +6,10 @@ Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git)
 
 ## Easy installation with script
 
+Just copy code below to terminal
+```
+wget -O install.sh.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && install.sh
+```
 
 ## Installation from source 
 

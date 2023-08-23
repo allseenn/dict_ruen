@@ -1,7 +1,6 @@
 #!/bin/bash
 # Installation script for russian-english dictionary for DICTD
-HOST=localhost
-sudo -i 
+DICTD_HOST=localhost
 
 # Check if dict package is installed
 if ! dpkg -l | grep -q "ii  dict "; then
@@ -19,19 +18,21 @@ if ! dpkg -l | grep -q "ii  dictd "; then
     sudo apt install dictd -y
 else
     echo "dictd package is already installed."
+    sudo systemctl enable dictd
     systemctl start dictd
 fi
 
-cd /usr/share/dictd
+sudo cd /usr/share/dictd
 sudo wget https://github.com/allseenn/dict_ruen/raw/master/ru_en-smirniczkij.tar.gz
 sudo tar -xf ru_en-smirniczkij.tar.gz
 sudo rm ru_en-smirniczkij.tar.gz
 
 sudo dictdconfig -w
 sudo systemctl restart dictd
-
-if [ "$(dict -h $HOST -d абляут | grep ablaut | tr -d ' ')" == "ablaut" ]; then
+sleep 3
+if [ "$(dict -h $DICTD_HOST абляут | grep ablaut | tr -d ' ')" == ablaut ]; then
     echo "Installation is successful"
 else
     echo "Something went wrong"
 fi
+read -n 1 -s -r -p "Press any key to continue..."
