@@ -3,6 +3,10 @@
 
 Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git) of Russian-English dictionary by Smirniczkij in DICT format (.index, .dict.dz) used by DICTD server (/usr/share/dictd). Tested on Ubuntu 20.04 LTS.
 
+
+## Easy installation with script
+
+
 ## Installation from source 
 
 1. Install git and dict format utility
@@ -58,15 +62,15 @@ cd /usr/share/dictd
 ```
 3. Download tarball with dictionary files from repo to local
 ```
-wget https://github.com/allseenn/dict_ruen/raw/master/ru_en-smirniczkij.tar.gzip
+wget https://github.com/allseenn/dict_ruen/raw/master/ru_en-smirniczkij.tar.gz
 ```
 4. Extract tarball
 ```
-tar -xf ru_en-smirniczkij.tar.gzip
+tar -xf ru_en-smirniczkij.tar.gz
 ```
 5. Delete tarball
 ```
-rm ru_en-smirniczkij.tar.gzip
+rm ru_en-smirniczkij.tar.gz
 ```
 6. Add new dictionary to DICTD config
 ```
