@@ -1,8 +1,12 @@
 # Russian-English dictionary (DICT format)
 ## Description
 
-Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git) of Russian-English dictionary by Smirniczkij in DICT format (.index, .dict.dz) used by DICTD server (/usr/share/dictd). Tested on Ubuntu 20.04 LTS.
-
+Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git) of Russian-English dictionary by Smirniczkij in DICT format (.index, .dict.dz) used by DICTD server (/usr/share/dictd).
+ 
+Was tested on:
+- Ubuntu 20.04.6 LTS
+- Ubuntu 22.04.3 LTS
+- Ubuntu 23.04
 
 ## Easy installation with script
 
