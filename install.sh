@@ -22,7 +22,7 @@ else
     systemctl start dictd
 fi
 
-sudo cd /usr/share/dictd
+cd /usr/share/dictd
 sudo wget https://github.com/allseenn/dict_ruen/raw/master/ru_en-smirniczkij.tar.gz
 sudo tar -xf ru_en-smirniczkij.tar.gz
 sudo rm ru_en-smirniczkij.tar.gz

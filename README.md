@@ -8,7 +8,7 @@ Its modified/improved [fork](https://github.com/vlakhadzhi/smirniczkij-dict.git)
 
 Just copy code below to terminal
 ```
-wget -O install.sh.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && install.sh
+wget -O install.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && bash install.sh
 ```
 
 ## Installation from source 
