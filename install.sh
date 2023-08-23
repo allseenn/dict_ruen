@@ -35,4 +35,5 @@ if [ "$(dict -h $DICTD_HOST абляут | grep ablaut | tr -d ' ')" == ablaut ]
 else
     echo "Something went wrong"
 fi
+
 read -n 1 -s -r -p "Press any key to continue..."
