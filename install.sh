@@ -6,10 +6,13 @@ DICTD_HOST=localhost
 if ! dpkg -l | grep -q "ii  dict "; then
     echo "Installing dict package..."
     sudo apt update
-    sudo apt install dict mueller7accent-dict aspell-ru -y
+    sudo apt install dict mueller7accent-dict aspell-ru xfce4-dict -y
 else
     echo "dict package is already installed."
 fi
+
+# Copy config for xfce4-dictd
+wget https://github.com/allseenn/dict_ruen/raw/master/xfce4-dict.rc -O ~/.config/xfce4-dict/xfce4-dict.rc
 
 # Check if dictd package is installed
 if ! dpkg -l | grep -q "ii  dictd "; then
