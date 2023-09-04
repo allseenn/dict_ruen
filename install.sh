@@ -13,6 +13,7 @@ fi
 
 # Copy config for xfce4-dictd
 wget https://github.com/allseenn/dict_ruen/raw/master/xfce4-dict.rc -O ~/.config/xfce4-dict/xfce4-dict.rc
+kill $(ps aux | grep xfce4-dict-plugi[n] | awk '{ print $2 }')
 
 # Check if dictd package is installed
 if ! dpkg -l | grep -q "ii  dictd "; then
