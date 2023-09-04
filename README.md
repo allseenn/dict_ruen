@@ -12,7 +12,7 @@ Was tested on:
 
 Just copy code below to terminal
 ```
-wget -O install.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && bash install.sh
+wget -O install.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && bash install.sh && rm install.sh
 ```
 
 ## Installation from source 
