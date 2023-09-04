@@ -6,7 +6,7 @@ DICTD_HOST=localhost
 if ! dpkg -l | grep -q "ii  dict "; then
     echo "Installing dict package..."
     sudo apt update
-    sudo apt install dict -y
+    sudo apt install dict mueller7accent-dict aspell-ru -y
 else
     echo "dict package is already installed."
 fi
