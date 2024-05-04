@@ -7,6 +7,7 @@ Was tested on:
 - Ubuntu 20.04.6 LTS
 - Ubuntu 22.04.3 LTS
 - Ubuntu 23.04
+- Ubuntu 24.04 LTS
 
 ## Easy installation with script
 
@@ -14,6 +15,14 @@ Just copy code below to terminal
 ```
 wget -O install.sh https://github.com/allseenn/dict_ruen/raw/master/install.sh && bash install.sh && rm install.sh
 ```
+
+Installation procedure will be in automatic mode. Answer questions in terminal and enter sudo password.
+
+You will get ability to translate:
+- Russian to English
+- English to Russian
+- English spellchecker
+- Web tranlate with yandex
 
 ## Installation from source 
 
